@@ -2,25 +2,93 @@
     background-color
 \*------------------------------------*/
 
-.bg-1{
+.bg-1 {
     background: linear-gradient(180deg, #7000FF 0%, #11002D 100%);
 }
 
-.bg-2{
+.bg-2 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, #300871 0%, #000 100%);
 }
 
 /*------------------------------------*\
     link style
 \*------------------------------------*/
-.link-color-white{
+.link-color-white {
     color: white;
+    position: relative;
+
+    &:hover {
+        color: white;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 2px;
+        background-color: white;
+        margin: 0 auto;
+        transition: width 0.8s;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+.link-color-dark {
+    color: black;
+    position: relative;
+
+    &:hover {
+        color: black;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 2px;
+        background-color: black;
+        margin: 0 auto;
+        transition: width 0.8s;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+.btn-hover:hover{
+    background: #7000FF;
+    color: white;
+    .icon-open{
+        display: none;
+    }
+    .icon-none{
+        display: inline;
+    }
 }
 
 
 /*------------------------------------*\
     font style
 \*------------------------------------*/
-.noto-sans{
+.noto-sans {
     font-family: 'Noto Sans TC', sans-serif;
+}
+
+/*------------------------------------*\
+    animation
+\*------------------------------------*/
+
+/*------------------------------------*\
+    btn icon
+\*------------------------------------*/
+.icon-none{
+    display: none;
+}
+
+.icon-open{
+    display: inline;
 }
