@@ -1,0 +1,51 @@
+.content-area {
+    padding-bottom: 90px;
+}
+
+.page-title {
+    letter-spacing: 40px;
+    position: relative;
+    top: 60px;
+    font-size: 40px;
+}
+@media (min-width: 768px) {
+    .page-title {
+        letter-spacing: 64px;
+        font-size: 64px;
+        top: 160px;
+    }
+}
+
+.circle {
+    width: 196px;
+    margin-top: 60px;
+}
+
+.btn:hover {
+    background-color: #fff;
+}
+
+.alternative {
+    &::before, &::after {
+        content: " ";
+        display: block;
+        width: 45%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+    }
+    &::after {
+        right: 0;
+    }
+}
+
+.login-btn {
+    &:hover {
+        box-shadow: 0 0 5px 5px gray;
+    }
+}
+
+.forget-password:hover {
+    text-decoration: underline;
+}
