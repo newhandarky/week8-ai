@@ -78,9 +78,13 @@
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-/*------------------------------------*\
-    animation
-\*------------------------------------*/
+.letter-spacing-xs{
+    letter-spacing: 1.6px;
+}
+.letter-spacing-sm{
+    letter-spacing: 16px;
+}
+
 
 /*------------------------------------*\
     btn icon
@@ -91,4 +95,11 @@
 
 .icon-open{
     display: inline;
+}
+
+/*------------------------------------*\
+    color
+\*------------------------------------*/
+.dark-primary{
+    color: #AD93CF;
 }

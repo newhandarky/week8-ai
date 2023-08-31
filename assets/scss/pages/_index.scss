@@ -1,0 +1,12 @@
+.circle{
+    width: 196px;
+    height: 196px;
+    @include media-992{
+        width: 128px;
+        height: 128px;
+    }
+    @include media-768{
+        width: 100px;
+        height: 100px;
+    }
+}
