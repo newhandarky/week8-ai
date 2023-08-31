@@ -16,6 +16,7 @@
 .link-color-white {
     color: white;
     position: relative;
+    font-weight: 500;
 
     &:hover {
         color: white;
@@ -79,10 +80,13 @@
 }
 
 .letter-spacing-xs{
-    letter-spacing: 1.6px;
+    letter-spacing: 0.1rem;
 }
 .letter-spacing-sm{
-    letter-spacing: 16px;
+    letter-spacing: 1rem;
+    @include media-576 {
+        letter-spacing: 0.3rem;
+    }
 }
 
 
