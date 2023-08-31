@@ -1,12 +1,11 @@
 .circle{
     width: 196px;
     height: 196px;
-    @include media-992{
-        width: 128px;
-        height: 128px;
-    }
-    @include media-768{
-        width: 100px;
-        height: 100px;
+}
+
+.alphabox{
+    font-size: 2rem;
+    @include media-576 {
+        font-size: 1.25rem;
     }
 }
