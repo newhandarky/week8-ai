@@ -1,29 +1,44 @@
-@mixin media-1200 {
-    @media(max-width: 1200px) {
+@mixin media-min-1200 {
+    @media(min-width: 1200px) {
         @content;
     }
 }
-@mixin media-992 {
-    @media(max-width: 992px) {
-        @content;
-    }
-}
-
-@mixin media-768 {
-    @media(max-width: 768px) {
+@mixin media-min-992 {
+    @media(min-width: 992px) {
         @content;
     }
 }
 
-@mixin media-576 {
-    @media(max-width: 576px) {
+@mixin media-min-768 {
+    @media(min-width: 768px) {
         @content;
     }
 }
 
-
-@mixin media-375 {
-    @media(max-width: 375px) {
+@mixin media-min-576 {
+    @media(min-width: 576px) {
         @content;
     }
+}
+
+@mixin media-min-375 {
+    @media(min-width: 375px) {
+        @content;
+    }
+}
+
+// 水平方向的漸層
+@mixin gradient-x($start-color: $primary, $end-color: $secondary) {
+    background-image: linear-gradient(to right, $start-color, $end-color);
+}
+
+  // 垂直方向的漸層
+@mixin gradient-y($start-color: $primary, $end-color: $secondary) {
+    background-image: linear-gradient(to bottom, $start-color, $end-color);
+}
+
+@mixin bg-img-cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
