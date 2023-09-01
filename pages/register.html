@@ -37,13 +37,16 @@
                     <form action="index.html">
                         <input type="text" name="fullName" placeholder="姓名" class="form-control noto-sans fw-bold fs-5 rounded-0 mb-4">
                         <input type="email" name="email" placeholder="EMAIL" class="form-control noto-sans fw-bold fs-5 rounded-0 mb-4">
-                        <input type="password" name="passWord" placeholder="密碼" class="form-control noto-sans fw-bold fs-5 rounded-0 mb-6">
-                        <label for="policy-agreement"><input type="checkbox" id="policy-agreement"></label>
+                        <input type="password" name="passWord" placeholder="密碼" class="form-control noto-sans fw-bold fs-5 rounded-0 mb-2">
+                        <div class="form-check form-check-inline mb-6">
+                            <input class="form-check-input" type="checkbox" id="policy-agreement">
+                            <label class="text-white noto-sans form-check-label" for="policy-agreement">我已仔細閱讀<a href="#" class="text-decoration-underline link-white link-to">相關條例</a></label>
+                        </div>
                         <button type="button" class="login-btn text-white form-control border-0 bg-lite-purple d-flex justify-content-center align-items-center gap-1 mb-2">
                             <img src="/assets/images/point_scan.svg" alt="point_scan icon">
                             <span class="pt-1">建立帳號</span>                           
                         </button>
-                        <a href="#" class="text-white text-end d-block forget-password">忘記密碼</a>
+                        <p class="text-white text-end noto-sans">已有帳號嗎 ? 前往<a href="login.html" class="text-decoration-underline link-white link-to">登入</a></p>
                     </form>
                 </div>
             </div>
