@@ -60,13 +60,15 @@
     }
 }
 
-.btn-hover:hover{
+.btn-hover:hover {
     background: #7000FF;
     color: white;
-    .icon-open{
+
+    .icon-open {
         display: none;
     }
-    .icon-none{
+
+    .icon-none {
         display: inline;
     }
 }
@@ -79,11 +81,13 @@
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-.letter-spacing-xs{
+.letter-spacing-xs {
     letter-spacing: 0.1rem;
 }
-.letter-spacing-sm{
+
+.letter-spacing-sm {
     letter-spacing: 0.3rem;
+
     @include media-min-576 {
         letter-spacing: 1rem;
     }
@@ -93,17 +97,31 @@
 /*------------------------------------*\
     btn icon
 \*------------------------------------*/
-.icon-none{
+.icon-none {
     display: none;
 }
 
-.icon-open{
+.icon-open {
     display: inline;
 }
 
 /*------------------------------------*\
     color
 \*------------------------------------*/
-.dark-primary{
-    color: #AD93CF;
+.dark-primary {
+    color: $primary-700;
+}
+
+/*------------------------------------*\
+    animation
+\*------------------------------------*/
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
