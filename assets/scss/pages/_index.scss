@@ -1,0 +1,63 @@
+.circle{
+    width: 196px;
+    height: 196px;
+}
+
+.alphabox{
+    font-size: 1.25rem;
+    @include media-min-576 {
+        font-size: 2rem;
+    }
+}
+
+.bg__line{
+    height: 1px;
+    background: rgba(185, 131, 255, 0.70);
+    width: 3000px;
+    z-index: 1;
+    &--1{
+        transform:rotate(20deg);
+        top: 400px;
+        left: -200px;
+    }
+    &--2{
+        transform:rotate(-5deg);
+        top: 100px;
+        left: -300px;
+    }
+}
+
+.block{
+    &__1{
+        margin-bottom: -104px;
+    }
+    &__2{
+        background-image: url("");
+    }
+}
+
+.ai__card {
+    @include bg-img-cover;
+    &__group{
+        z-index: 2;
+    }
+    &--1{
+        background-image: url("https://github.com/newhandarky/week8-ai/blob/main/assets/images/diane.png?raw=true");
+        height: 676px;
+        margin-top: -96px;
+        flex-shrink: 0;
+    }
+    &--2{
+        background-image: url("https://github.com/newhandarky/week8-ai/blob/main/assets/images/felix.png?raw=true");
+        height: 580px;
+    }
+    &--3{
+        background-image: url("https://github.com/newhandarky/week8-ai/blob/main/assets/images/karina.png?raw=true");
+        height: 580px;
+    }
+    &--4{
+        background-image: url("https://github.com/newhandarky/week8-ai/blob/main/assets/images/vito.png?raw=true");
+        height: 676px;
+        margin-top: -96px;
+    }
+}

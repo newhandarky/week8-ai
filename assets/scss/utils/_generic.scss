@@ -2,8 +2,8 @@
     background-color
 \*------------------------------------*/
 
-.bg-1 {
-    background: linear-gradient(180deg, #7000FF 0%, #11002D 100%);
+.bg-gradient-y {
+    @include gradient-y($primary-200, $primary-600)
 }
 
 .bg-2 {
@@ -16,6 +16,7 @@
 .link-color-white {
     color: white;
     position: relative;
+    font-weight: 500;
 
     &:hover {
         color: white;
@@ -78,9 +79,16 @@
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-/*------------------------------------*\
-    animation
-\*------------------------------------*/
+.letter-spacing-xs{
+    letter-spacing: 0.1rem;
+}
+.letter-spacing-sm{
+    letter-spacing: 0.3rem;
+    @include media-min-576 {
+        letter-spacing: 1rem;
+    }
+}
+
 
 /*------------------------------------*\
     btn icon
@@ -91,4 +99,11 @@
 
 .icon-open{
     display: inline;
+}
+
+/*------------------------------------*\
+    color
+\*------------------------------------*/
+.dark-primary{
+    color: #AD93CF;
 }

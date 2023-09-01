@@ -1,14 +1,17 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
+@import './utils/custom-color';
 
 @import "../../node_modules/bootstrap";
 
+@import "./utils/mixin";
 @import "./base/base";
 @import "./utils/generic";
-@import "./utils/mixin";
 
 @import "./layout/footer";
 @import "./layout/header";
 
 @import "./pages/index";
 @import "./pages/product";
+@import "./pages/login";
+@import "./pages/news";
