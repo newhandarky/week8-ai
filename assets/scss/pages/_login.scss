@@ -16,9 +16,26 @@
     }
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+
 .circle {
     width: 196px;
     margin-top: 60px;
+    animation-name: rotation;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
 }
 
 .btn:hover {
