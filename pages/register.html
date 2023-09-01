@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員註冊</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body class="d-flex flex-column vh-100">
+    <div class="bg-gradient-y">
+        <%- include('./layout/header'); -%>
+    </div>
+
+    <main class="bg-2 flex-grow-1 content-area">
+        <div class="container">
+            <h2 class="text-white fw-bold page-title">註冊</h2>
+            <img src="/assets/images/circle.svg" alt="logo" class="d-block circle mx-auto mb-6 mt-md-0">
+            <h3 class="text-white text-center">ALPHABOX+</h3>
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <button type="button"
+                        class="btn border border-white noto-sans text-white link-dark w-100 rounded-pill d-flex justify-content-center mb-4">
+                        <img src="/assets/images/apple.svg" alt="apple trademark" class="align-self-center me-3">
+                        Continue with Apple
+                    </button>
+                    <button type="button"
+                        class="btn border border-white noto-sans text-white link-dark w-100 rounded-pill d-flex justify-content-center">
+                        <img src="/assets/images/google.svg" alt="google trademark" class="align-self-center me-3">
+                        Continue with Google
+                    </button>
+                    <div class="py-10 text-center">
+                        <p class="noto-sans text-white alternative position-relative mb-0">or</p>
+                    </div>
+                    <form action="index.html">
+                        <input type="text" name="fullName" placeholder="姓名" class="form-control noto-sans fw-bold fs-5 rounded-0 mb-4">
+                        <input type="email" name="email" placeholder="EMAIL" class="form-control noto-sans fw-bold fs-5 rounded-0 mb-4">
+                        <input type="password" name="passWord" placeholder="密碼" class="form-control noto-sans fw-bold fs-5 rounded-0 mb-6">
+                        <label for="policy-agreement"><input type="checkbox" id="policy-agreement"></label>
+                        <button type="button" class="login-btn text-white form-control border-0 bg-lite-purple d-flex justify-content-center align-items-center gap-1 mb-2">
+                            <img src="/assets/images/point_scan.svg" alt="point_scan icon">
+                            <span class="pt-1">建立帳號</span>                           
+                        </button>
+                        <a href="#" class="text-white text-end d-block forget-password">忘記密碼</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <%- include('./layout/footer'); -%>
+        <script type="module" src="../main.js"></script>
+</body>
+
+</html>
