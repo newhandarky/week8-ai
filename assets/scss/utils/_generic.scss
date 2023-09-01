@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .bg-gradient-y {
-    @include gradient-y($primary-200, $primary-600)
+    @include gradient-y($primary-200, $primary-600);
 }
 
 .bg-2 {
