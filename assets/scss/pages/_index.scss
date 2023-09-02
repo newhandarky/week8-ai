@@ -59,9 +59,11 @@
         background-image: url("https://github.com/newhandarky/week8-ai/blob/main/assets/images/carousel_background.jpg?raw=true");
         width: 50%;
         height: 1000px;
+
         @include media-min-992 {
             height: 1089px;
         }
+
         filter: blur(5px);
         top: 0;
         left: 0;
@@ -77,13 +79,17 @@
         @include media-min-768 {
             background: radial-gradient(50% 50% at 50% 50%, #300871 0%, #000 100%);
         }
+
         height: 790px;
+
         @include media-min-576 {
             height: 1000px;
         }
+
         @include media-min-992 {
             height: 1089px;
         }
+
         filter: brightness(0.7) blur(5px);
 
         &__content {
@@ -104,23 +110,30 @@
 
             top: 144px;
         }
-        &__item{
+
+        &__item {
             height: 351px;
+
             @include media-min-576 {
                 height: 560px;
             }
-            h3{
+
+            h3 {
                 font-size: 64px;
+
                 @include media-min-768 {
                     font-size: 80px;
                 }
+
                 @include media-min-1200 {
                     font-size: 96px;
                 }
             }
-            h4{
+
+            h4 {
                 font-size: 24px;
                 letter-spacing: 24px;
+
                 @include media-min-768 {
                     font-size: 32px;
                     letter-spacing: 32px;
@@ -128,14 +141,50 @@
             }
         }
     }
-    &__3{
-        background: radial-gradient(50% 50% at 50% 50%, #28085C 0%, #000 100%);
-        h2{
+
+    &__3 {
+        h2 {
             letter-spacing: 40px;
-            @include media-min-576 {
+            text-indent: 40px;
+
+            @include media-min-768 {
                 letter-spacing: 48px;
+                text-indent: 0;
             }
         }
+
+        &__date {
+            letter-spacing: 16px;
+        }
+
+        h3 {
+            letter-spacing: 20px
+        }
+
+        &__text {
+            max-width: 950px
+        }
+        &__center__border{
+            @include media-min-768 {
+                border-left: 1px solid white
+            }
+        }
+        .circle-img{
+            width: 132px;
+            height: 132px;
+            z-index: 1;
+            animation-name: rotate;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+        }
+        .circle-text{
+            top: 52px;
+            z-index: 2;
+            background: $primary-600;
+        }
+
     }
 }
 
@@ -153,6 +202,11 @@
     @include gradient-x($primary-600, $primary-200);
     height: 40px;
     position: relative;
+}
+
+
+.bg-block-3 {
+    background: radial-gradient(50% 50% at 50% 50%, #28085C 0%, #000 100%);
 }
 
 
