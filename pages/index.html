@@ -133,20 +133,23 @@
 
           <div class="swiper">
             <div class="swiper-wrapper text-white">
-              <div class="swiper-slide block__2__item p-4 p-lg-10 d-flex flex-column justify-content-end align-items-start justify-content-sm-center align-items-sm-end">
-                  <h3 class="fw-normal">01</h3>
-                  <h4 class="fw-bold">立體投影技術</h4>
-                  <p class="fw-bold text-start">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+              <div
+                class="swiper-slide block__2__item p-4 p-lg-10 d-flex flex-column justify-content-end align-items-start justify-content-sm-center align-items-sm-end">
+                <h3 class="fw-normal">01</h3>
+                <h4 class="fw-bold">立體投影技術</h4>
+                <p class="fw-bold text-start">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
               </div>
-              <div class="swiper-slide block__2__item p-4 p-lg-10 d-flex flex-column justify-content-end align-items-start justify-content-sm-center align-items-sm-end">
-                  <h3 class="fw-normal">02</h3>
-                  <h4 class="fw-bold">立體投影技術</h4>
-                  <p class="fw-bold text-start">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+              <div
+                class="swiper-slide block__2__item p-4 p-lg-10 d-flex flex-column justify-content-end align-items-start justify-content-sm-center align-items-sm-end">
+                <h3 class="fw-normal">02</h3>
+                <h4 class="fw-bold">立體投影技術</h4>
+                <p class="fw-bold text-start">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
               </div>
-              <div class="swiper-slide block__2__item p-4 p-lg-10 d-flex flex-column justify-content-end align-items-start justify-content-sm-center align-items-sm-end">
-                  <h3 class="fw-normal">03</h3>
-                  <h4 class="fw-bold">立體投影技術</h4>
-                  <p class="fw-bold text-start">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+              <div
+                class="swiper-slide block__2__item p-4 p-lg-10 d-flex flex-column justify-content-end align-items-start justify-content-sm-center align-items-sm-end">
+                <h3 class="fw-normal">03</h3>
+                <h4 class="fw-bold">立體投影技術</h4>
+                <p class="fw-bold text-start">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
               </div>
             </div>
           </div>
@@ -163,17 +166,29 @@
           </div>
         </div>
       </div>
-
       <div class="px-3 px-md-10 px-lg-20 ">
         <div class="bg-gradient-left z-index-3"></div>
       </div>
-
     </div>
-
-
-
-
   </section>
+
+  <div class="block__3">
+    <section class="container pt-15 pb-20 text-white">
+      <h2 class="mt-0 mt-lg-20 text-center text-md-start">最新消息</h2>
+      <div class="row">
+        <div class="col-12">
+  
+        </div>
+        <div class="col-12 col-md-6">
+  
+        </div>
+        <div class="col-12 col-md-6">
+  
+        </div>
+  
+      </div>
+    </section>
+  </div>
 
 
 
@@ -188,22 +203,25 @@
 
 <script>
   window.onload = function () {
+    window.addEventListener("resize", function(){
+      if (window.screen.width < 992) {
+        const swiper = new Swiper('.swiper', {        
+          autoplay: {
+            delay: 3000,
+          },
+        });
+      }
+    })    
+
     const swiper = new Swiper('.swiper', {
-      // Optional parameters
       direction: 'horizontal', // 投影片的方向為水平方向
       loop: false, // 不使用循環播放
       allowTouchMove: true, // 不要拖曳投影片
-
-
       // Navigation arrows
       navigation: {
         nextEl: '.button-next',  // 下一頁客製化圓點的CSS選擇器
         prevEl: '.button-prev',  // 上一頁客製化圓點的CSS選擇器
       },
-
     });
-
-
-
   };
 </script>
