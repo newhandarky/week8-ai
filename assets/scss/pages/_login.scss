@@ -1,0 +1,68 @@
+.content-area {
+    padding-bottom: 90px;
+}
+
+.page-title {
+    letter-spacing: 40px;
+    position: relative;
+    top: 60px;
+    font-size: 40px;
+}
+@media (min-width: 768px) {
+    .page-title {
+        letter-spacing: 64px;
+        font-size: 64px;
+        top: 160px;
+    }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+
+.circle {
+    width: 196px;
+    margin-top: 60px;
+    animation-name: rotation;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+
+.btn:hover {
+    background-color: #fff;
+}
+
+.alternative {
+    &::before, &::after {
+        content: " ";
+        display: block;
+        width: 45%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+    }
+    &::after {
+        right: 0;
+    }
+}
+
+.login-btn {
+    &:hover {
+        box-shadow: 0 0 5px 5px gray;
+    }
+}
+
+.forget-password:hover {
+    text-decoration: underline;
+}

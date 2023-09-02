@@ -307,6 +307,7 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 $white:         $white;     // 自訂顏色 $custom 
+$lite-purple: #6e01f8; // 自訂顏色 $custom 
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -320,6 +321,7 @@ $theme-colors: (
   "light":      $light,
   "dark":       $dark,
   "white":      $white,   // 自訂顏色 $custom 
+  "lite-purple": $lite-purple // 自訂顏色 $custom 
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -392,10 +394,10 @@ $spacers: (
   14: $spacer * 3.5,
   15: $spacer * 3.75,
   16: $spacer * 4,
-  17: $spacer * 4.25,
+  17: $spacer * 4.25,  
   18: $spacer * 4.5,
   19: $spacer * 4.75,
-  20: $spacer * 5,
+  20: $spacer * 5
 ) !default;
 // scss-docs-end spacer-variables-maps
 
