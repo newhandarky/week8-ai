@@ -1,0 +1,91 @@
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 0;
+}
+.bg-3 {
+    background: linear-gradient(180deg, rgba(40, 8, 92, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+.bg-4{
+    background-color: rgba(56, 12, 126, 1);
+}
+.bg-5{
+    background-color: rgba(255, 255, 255, 1);
+}
+.product-btn-1{
+
+    color: $white;
+    background-color: $black;
+    &:hover{
+        color: #7000FF;
+        background-color: $white;
+
+    }
+
+}
+.active{
+        color: $black;
+        background-color: $white;
+}
+.banner{
+    height: 100vh;
+}
+// .banner-left{
+//     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_square1.png?raw=true);
+//     background-size:cover;
+//     background-repeat: no-repeat;
+// }
+// .control-bar{
+//     button{
+//         padding: 6px;
+//     }
+// }
+.left-arrow{
+    font-size: $font-size-base*2.25;
+    // color: rgba(255, 255, 255, 0.3);
+}
+.right-arrow{
+    font-size: $font-size-base*2.25;
+    // color: rgba(255, 255, 255, 1);
+}
+.banner-right{
+    .material-symbols-outlined{
+        position: absolute;
+        top: -11px;
+        left: 240px;
+    }
+
+}
+
+.alphaboxCircle {
+    width: 196px;
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-fill-mode: both; 
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+}
+.pc-text{
+    display: none;
+}
+
+@media(min-width:992px){
+    // .control-bar{
+    //     button{
+    //         padding: 10px;
+    //     }
+    // }
+    .left-arrow{
+        font-size: $font-size-base*3.75;
+    }
+    .right-arrow{
+        font-size: $font-size-base*3.75;
+    }
+    .pc-text{
+        display: block;
+    }
+    
+}
