@@ -42,3 +42,17 @@
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+@mixin set-letter-spacing($font-size){
+    font-size: $font-size;
+    letter-spacing: $font-size;
+}
+
+
+@mixin rotate-360{
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
