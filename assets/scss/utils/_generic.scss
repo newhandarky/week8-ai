@@ -61,8 +61,21 @@
 }
 
 .btn-hover:hover {
-    background: #7000FF;
     color: white;
+    background-color: $primary-200;
+
+    .icon-open {
+        display: none;
+    }
+
+    .icon-none {
+        display: inline;
+    }
+}
+
+.btn-primary:hover {
+    color: black;
+    background-color: white;
 
     .icon-open {
         display: none;
@@ -116,7 +129,7 @@
     animation
 \*------------------------------------*/
 
-@keyframes rotate {
+@keyframes rotate-360 {
     0% {
         transform: rotate(0deg);
     }

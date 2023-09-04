@@ -1,4 +1,4 @@
-.circle {
+.index-circle {
     width: 196px;
     height: 196px;
     @include rotate-360;
@@ -27,6 +27,16 @@
         transform: rotate(-5deg);
         top: 100px;
         left: -300px;
+    }
+}
+
+.index__input{
+    &::placeholder {
+        color: $primary-500;    
+    }
+    &__text{
+        resize: none;
+        height: 120px;
     }
 }
 
