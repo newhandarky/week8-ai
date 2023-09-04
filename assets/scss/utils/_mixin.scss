@@ -50,9 +50,9 @@
 
 
 @mixin rotate-360{
-    animation-name: rotate;
+    animation-name: rotate-360;
     animation-duration: 4s;
-    animation-timing-function: ease;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
 }
