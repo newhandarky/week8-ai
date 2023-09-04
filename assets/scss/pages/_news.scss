@@ -1,3 +1,111 @@
+
+.news-body{
+    background: radial-gradient(50% 50% at 50% 50%, #28085C 0%, #000000 100%);
+    color: white;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    width: 1296px;
+    margin: 0 auto;
+    padding: 160px 0;
+
+    &_header{
+        margin: 0 auto;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 150%;
+        letter-spacing: 1em;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+
+    &_content{
+        display: flex;
+
+        &__left{
+            display: flex;
+            flex-direction: column;
+
+            .backup{
+                width: 40px;
+                height: 40px;
+                margin-right: initial;
+            }
+        }
+
+        &__right{
+            .content{
+                border-top: 1px solid;
+                border-bottom: 1px solid;
+                padding: 40px 0 40px 0;
+            }
+        }
+    }
+
+    &_footer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+        p{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+            letter-spacing: 1em;
+            text-align: left;
+
+        }
+        
+    }
+    
+}
+
+.news-img{
+    width: 416px;
+    height: 600px;
+    margin-right: 24px;
+}
+
+.back-link{
+    color: white;
+}
+
+.information{
+    padding: 40px 16px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    &_header{
+        display: flex;
+        margin-bottom: 12px;
+    }
+    h2{
+        font-family: Noto Sans CJK TC;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 1em;
+        margin-left: 19.35px;
+        // text-align: left;
+    }
+
+    h3{
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 350;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 12px;
+        &:last-child{ 
+            margin-bottom: 0;
+        }
+    }
+}
 // body{
 //     background: radial-gradient(50% 50% at 50% 50%, #28085C 0%, #000000 100%);
 //     color: white;
