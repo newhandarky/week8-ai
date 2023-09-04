@@ -48,10 +48,11 @@
     letter-spacing: $font-size;
 }
 
-@mixin rotate{
+
+@mixin rotate-360{
     animation-name: rotate;
     animation-duration: 4s;
-    animation-timing-function: linear;
+    animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
 }

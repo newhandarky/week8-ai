@@ -1,7 +1,7 @@
 .circle {
     width: 196px;
     height: 196px;
-    @include rotate;
+    @include rotate-360;
 }
 
 .alphabox {
@@ -168,7 +168,7 @@
             width: 132px;
             height: 132px;
             z-index: 1;
-            @include rotate;
+            @include rotate-360;
         }
         .circle-text{
             top: 52px;
@@ -195,7 +195,20 @@
                 color: black
             }
         }
-
+    }
+    &__5{
+        h3{
+            @include set-letter-spacing(40px);
+            @include media-min-1200 {
+                @include set-letter-spacing(48px);
+            }
+        }
+        &__white-bar{
+            background: white;
+            width: 124px;
+            // height: 0;
+            height: 12px;
+        }
     }
 }
 
@@ -222,6 +235,10 @@
 
 .bg-block-4 {
     background: radial-gradient(50% 50% at 50% 50%, #000 0%, #28085C 100%);
+}
+
+.bg-block-5{
+    background: $primary-500;
 }
 
 .bg-text{
@@ -319,3 +336,7 @@
     height: 100%;
     object-fit: cover;
 }
+
+// .swiper-scrollbar-horizontal{
+//     width: 500px;
+// }
