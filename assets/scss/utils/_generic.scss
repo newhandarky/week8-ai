@@ -63,6 +63,7 @@
 .btn-hover:hover {
     color: white;
     background-color: $primary-200;
+    box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.80);
 
     .icon-open {
         display: none;
@@ -76,6 +77,7 @@
 .btn-primary:hover {
     color: black;
     background-color: white;
+    box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.80);
 
     .icon-open {
         display: none;
