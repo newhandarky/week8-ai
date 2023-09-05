@@ -393,6 +393,12 @@
     object-fit: cover;
 }
 
-// .swiper-scrollbar-horizontal{
-//     width: 500px;
-// }
+.swiper-scrollbar{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.swiper-scrollbar-drag {
+    background: white;
+    width: 75%;
+}
+
