@@ -9,8 +9,8 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <script type="module" crossorigin src="/week8-ai/assets/bootstrap.min-12584933.js"></script>
-  <link rel="stylesheet" href="/week8-ai/assets/bootstrap-81e155cf.css">
+  <script type="module" crossorigin src="/week8-ai/assets/bootstrap.min-a061c4ef.js"></script>
+  <link rel="stylesheet" href="/week8-ai/assets/bootstrap-e7138332.css">
 </head>
 
 <body>
@@ -557,8 +557,8 @@
 
       <div class="d-none d-sm-block block__4__sm__blocks noto-sans">
         <div class="block__4-swiper overflow-hidden vw-100">
-          <ul class="swiper-wrapper mb-20 row">
-            <li class="swiper-slide block__4__sm__item col-3 p-6 d-flex flex-column justify-content-between mb-6">
+          <ul class="swiper-wrapper mb-6 row">
+            <li class="swiper-slide block__4__sm__item p-6 d-flex flex-column justify-content-between col-3">
               <div class="fw-bold">
                 <p class="mb-8">
                   <span class="me-2">Zona</span>
@@ -586,7 +586,7 @@
                 </p>
               </div>
             </li>
-            <li class="swiper-slide block__4__sm__item col-3 p-6 d-flex flex-column justify-content-between mb-6">
+            <li class="swiper-slide block__4__sm__item p-6 d-flex flex-column justify-content-between col-3">
               <div class="fw-bold">
                 <p class="mb-8">
                   <span class="me-2">Lin</span>
@@ -614,7 +614,7 @@
                 </p>
               </div>
             </li>
-            <li class="swiper-slide block__4__sm__item col-3 p-6 d-flex flex-column justify-content-between mb-6">
+            <li class="swiper-slide block__4__sm__item p-6 d-flex flex-column justify-content-between col-3">
               <div class="fw-bold">
                 <p class="mb-8">
                   <span class="me-2">云</span>
@@ -642,7 +642,7 @@
                 </p>
               </div>
             </li>
-            <li class="swiper-slide block__4__sm__item col-3 p-6 d-flex flex-column justify-content-between">
+            <li class="swiper-slide block__4__sm__item p-6 d-flex flex-column justify-content-between col-3">
               <div class="fw-bold">
                 <p class="mb-8">
                   <span class="me-2">Zichi</span>
@@ -675,7 +675,7 @@
 
 
         <div>
-          <div class="row align-items-center">
+          <div class="row align-items-center mb-20">
             <div class="col-8">
               <div class="swiper-scrollbar position-static"></div>
             </div>
@@ -695,9 +695,9 @@
 
 
 
-    <!-- <div class="bg-text position-absolute start-50 translate-middle">
+    <div class="bg-text position-absolute start-50 translate-middle">
       ALPHABOX+
-    </div> -->
+    </div>
   </section>
 
 
@@ -733,12 +733,20 @@
             </svg>
           </div>
           <form class="mb-4" id="myform" action="" method="post">
-            <input class="index__input w-100 py-2 px-4 mb-4 noto-sans fw-bold" placeholder="EMAIL" type="email"
+            <div class="form-floating">
+              <input class="index__input form-control w-100 py-2 px-4 mb-4 noto-sans fw-bold rounded-0" placeholder="EMAIL" type="email"
               name="email" id="email">
-            <textarea class="index__input index__input__text w-100 py-2 px-4 noto-sans fw-bold" placeholder="COMMENTS"
+              <label class="text-black noto-sans fw-bold" for="email">EMAIL</label>
+            </div>
+            <div class="form-floating">
+              <textarea class="index__input index__input__text form-control w-100 py-2 px-4 noto-sans fw-bold rounded-0" placeholder="COMMENTS"
               name="comments" id="comments"></textarea>
+              <label class="text-black noto-sans fw-bold" for="comments">COMMENTS</label>
+            </div>
           </form>
         </div>
+        
+        
         <div class="d-none d-lg-block col-lg-8"></div>
         <div class="col-lg-4">
           <button class="btn btn-primary py-2 px-4 col-lg-4 w-100" type="submit" form="myform">
