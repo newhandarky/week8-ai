@@ -30,15 +30,7 @@
     }
 }
 
-.index__input{
-    &::placeholder {
-        color: $primary-500;    
-    }
-    &__text{
-        resize: none;
-        height: 120px;
-    }
-}
+
 
 /*------------------------------------*\
     z-index
@@ -205,6 +197,9 @@
                 color: black
             }
         }
+        .row{
+            flex-wrap: nowrap
+        }
     }
     &__5{
         h3{
@@ -217,6 +212,15 @@
             background: white;
             width: 124px;
             height: 12px;
+        }
+        .index__input{
+            &__text{
+                resize: none;
+                height: 120px;
+            }
+            &:focus-visible{                
+                box-shadow: 0px 0px 8px 4px $primary-300;
+            }
         }
     }
 
@@ -399,6 +403,5 @@
 
 .swiper-scrollbar-drag {
     background: white;
-    width: 75%;
 }
 
