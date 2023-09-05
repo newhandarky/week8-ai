@@ -1,6 +1,9 @@
 h1,h2,h3,h4,h5,h6,p{
     margin-bottom: 0;
 }
+.font-family-ch{
+    font-family: 'Noto Sans TC', sans-serif;
+}
 .bg-3 {
     background: linear-gradient(180deg, rgba(40, 8, 92, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
@@ -11,7 +14,6 @@ h1,h2,h3,h4,h5,h6,p{
     background-color: rgba(255, 255, 255, 1);
 }
 .product-btn-1{
-
     color: $white;
     background-color: $black;
     &:hover{
@@ -21,48 +23,68 @@ h1,h2,h3,h4,h5,h6,p{
     }
 
 }
-.active{
-        color: $black;
-        background-color: $white;
+.nav-button{
+    .product-active{
+            color: $black;
+            background-color: $white;
+    }
+
 }
-.banner{
-    height: 100vh;
+.product-banner{
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+
 }
-// .banner-left{
-//     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_square1.png?raw=true);
-//     background-size:cover;
-//     background-repeat: no-repeat;
-// }
-// .control-bar{
-//     button{
-//         padding: 6px;
-//     }
-// }
+.product-banner-left{
+    width: 100%;
+
+}
+.product-banner-right{
+    width: 100%;
+    padding-bottom: 149px;
+    .border{
+        border: 2px solid $white;
+    }
+    .line{
+        width: 25%;
+    }
+    .material-symbols-outlined{
+        position: absolute;
+        top: -10px;
+        left: 24%;
+        font-weight: 800;
+    }
+    
+
+}
+
 .left-arrow{
     font-size: $font-size-base*2.25;
+
     // color: rgba(255, 255, 255, 0.3);
 }
 .right-arrow{
     font-size: $font-size-base*2.25;
+
     // color: rgba(255, 255, 255, 1);
 }
-.banner-right{
-    .material-symbols-outlined{
-        position: absolute;
-        top: -11px;
-        left: 240px;
-    }
-
+.alphaboxCircleBox{
+    bottom: 0;
+    left: 36%;
 }
 
 .alphaboxCircle {
-    width: 196px;
+    width: 109px;
     animation-name: rotate;
     animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite; 
     animation-fill-mode: both; 
+
 }
+
+
 
 @keyframes rotate {
     0% { transform: rotate(0deg) }
@@ -72,12 +94,59 @@ h1,h2,h3,h4,h5,h6,p{
     display: none;
 }
 
+.text-body{
+    li{
+        h6{
+            &:hover{
+                    border-bottom: 2px solid rgba(0, 0, 0, 1);
+            }
+    
+        }
+
+    }
+
+}
+
+.dot-s{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    vertical-align: 2px;
+}
+.dot-l{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    vertical-align:0px;
+}
+@media(min-width:768px){
+    .product-banner-right{
+        .line{
+            width: 50%;
+        }
+        .material-symbols-outlined{
+            // position: absolute;
+            top: -10.5px;
+            left: 49%;
+        }
+        
+    
+    }
+}
+
 @media(min-width:992px){
-    // .control-bar{
-    //     button{
-    //         padding: 10px;
-    //     }
-    // }
+
+    .product-banner{
+        display: flex;
+        flex-direction: row;
+    
+    }
+    .product-banner-left{
+        width: 50%;
+    }
+    .product-banner-right{
+        width: 50%;
+    }
     .left-arrow{
         font-size: $font-size-base*3.75;
     }
@@ -87,5 +156,11 @@ h1,h2,h3,h4,h5,h6,p{
     .pc-text{
         display: block;
     }
-    
+    .alphaboxCircleBox{
+        bottom: 0;
+        left: -13%;
+    }
+    .alphaboxCircle {
+        width: 196px;
+    }
 }
