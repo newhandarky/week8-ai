@@ -453,10 +453,13 @@
           </li>
         </ul>
       </div>
+
+
+
       <div class="d-none d-sm-block block__4__sm__blocks noto-sans">
         <div class="block__4-swiper overflow-hidden vw-100">
-          <ul class="swiper-wrapper mb-20">
-            <li class="swiper-slide block__4__sm__item p-6 d-flex flex-column justify-content-between mb-6">
+          <ul class="swiper-wrapper mb-20 row">
+            <li class="swiper-slide block__4__sm__item p-6 d-flex flex-column justify-content-between mb-6 col-3 ">
               <div class="fw-bold">
                 <p class="mb-8">
                   <span class="me-2">Zona</span>
@@ -484,7 +487,7 @@
                 </p>
               </div>
             </li>
-            <li class="swiper-slide block__4__sm__item p-6 d-flex flex-column justify-content-between mb-6">
+            <li class="swiper-slide block__4__sm__item p-6 d-flex flex-column justify-content-between mb-6 col-3">
               <div class="fw-bold">
                 <p class="mb-8">
                   <span class="me-2">Lin</span>
@@ -512,7 +515,7 @@
                 </p>
               </div>
             </li>
-            <li class="swiper-slide block__4__sm__item p-6 d-flex flex-column justify-content-between mb-6">
+            <li class="swiper-slide block__4__sm__item p-6 d-flex flex-column justify-content-between mb-6 col-3">
               <div class="fw-bold">
                 <p class="mb-8">
                   <span class="me-2">云</span>
@@ -540,7 +543,7 @@
                 </p>
               </div>
             </li>
-            <li class="swiper-slide block__4__sm__item p-6 d-flex flex-column justify-content-between">
+            <li class="swiper-slide block__4__sm__item p-6 d-flex flex-column justify-content-between col-3">
               <div class="fw-bold">
                 <p class="mb-8">
                   <span class="me-2">Zichi</span>
@@ -569,16 +572,23 @@
               </div>
             </li>
           </ul>
-          <div>
-            <div>
-              <div class="swiper-scrollbar bg-white"></div>
+        </div>
+
+
+        <div>
+          <div class="row align-items-center">
+            <div class="col-8">
+              <div class="swiper-scrollbar position-static"></div>
+            </div>
+            <div class="col-2">
               <span>SCROLL</span>
             </div>
           </div>
-          <div>
-          </div>
         </div>
       </div>
+
+
+
       <div class="pt-7">
         <p>若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。</p>
       </div>
@@ -805,7 +815,7 @@
       spaceBetween: 24,
       // 滑鼠中鍵滾輪可滑動
       mousewheel: true,
-      width: 416,
+      // width: 416,
       // If we need pagination
       pagination: {
         el: '.swiper-pagination',
