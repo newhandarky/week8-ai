@@ -5,13 +5,21 @@ h1,h2,h3,h4,h5,h6,p{
     font-family: 'Noto Sans TC', sans-serif;
 }
 .bg-3 {
-    background: linear-gradient(180deg, rgba(40, 8, 92, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: radial-gradient(rgba(40, 8, 92, 1), rgba(0, 0, 0, 1));
 }
+
 .bg-4{
     background-color: rgba(56, 12, 126, 1);
 }
 .bg-5{
     background-color: rgba(255, 255, 255, 1);
+}
+.nav-button{
+    .product-active{
+            color: $black;
+            background-color: $white;
+    }
+
 }
 .product-btn-1{
     color: $white;
@@ -21,18 +29,6 @@ h1,h2,h3,h4,h5,h6,p{
         background-color: $white;
 
     }
-
-}
-.nav-button{
-    .product-active{
-            color: $black;
-            background-color: $white;
-    }
-
-}
-.product-banner{
-    display: flex;
-    flex-direction: column;
 
 }
 .product-banner-left{
@@ -48,13 +44,12 @@ h1,h2,h3,h4,h5,h6,p{
     .line{
         width: 25%;
     }
-    .material-symbols-outlined{
+    .arrow{
         position: absolute;
-        top: -11px;
+        top: -10px;
         left: 24%;
         font-weight: 900;
     }
-    
 
 }
 
@@ -65,8 +60,8 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: $font-size-base*2.25;
 }
 .alphaboxCircleBox{
-    bottom: 0;
-    left: 36%;
+    bottom: 0px;
+    left: 35.5%;
 }
 
 .alphaboxCircle {
@@ -101,6 +96,10 @@ h1,h2,h3,h4,h5,h6,p{
     }
 
 }
+.feedback-title{
+    font-size: $font-size-base*2.5;
+    letter-spacing: 40px;
+}
 
 .dot-s{
     width: 8px;
@@ -119,32 +118,24 @@ h1,h2,h3,h4,h5,h6,p{
         .line{
             width: 50%;
         }
-        .material-symbols-outlined{
-            // position: absolute;
-            top: -10px;
+        .arrow{
             left: 49%;
         }
-        
     
+    }
+    .alphaboxCircleBox{
+        bottom: 0px;
+        left: 43%;
     }
 }
 
 @media(min-width:992px){
 
-    .product-banner{
-        display: flex;
-        flex-direction: row;
-    
-    }
     .product-banner-left{
         width: 50%;
     }
     .product-banner-right{
         width: 50%;
-        .material-symbols-outlined{
-            top: -11px;
-            // left: 49%;
-        }
     }
     .left-arrow{
         font-size: $font-size-base*3.75;
@@ -157,9 +148,25 @@ h1,h2,h3,h4,h5,h6,p{
     }
     .alphaboxCircleBox{
         bottom: 0;
-        left: -13%;
+        left: -19.76%;
     }
     .alphaboxCircle {
         width: 196px;
+    }
+    .feedback-title{
+        font-size: $font-size-base*3;
+        letter-spacing: 48px;
+    }
+}
+@media(min-width:1200px){
+    .alphaboxCircleBox{
+        bottom: 0;
+        left: -16.33%;
+    }
+}
+@media(min-width:1400px){
+    .alphaboxCircleBox{
+        bottom: 0;
+        left: -13%;
     }
 }
